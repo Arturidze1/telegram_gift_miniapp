@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🎁 Рулетка подарков</title>
+  <meta charset="UTF-8">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>🎁 Открой кейс и получи приз</h1>
+
+  <div id="stars">⭐ Звёзд: 10</div>
+  <button class="btn" onclick="addStars()">Пополнить звёзды</button>
+  <button class="btn" onclick="spin()">Открыть кейс</button>
+
+  <div id="indicator"></div>
+  <div id="roulette-container">
+    <div id="roulette-strip"></div>
+  </div>
+
+  <div id="prize">🎲 Ваш приз появится тут!</div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

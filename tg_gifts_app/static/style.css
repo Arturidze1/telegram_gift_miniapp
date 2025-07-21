@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  color: #333;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0088cc;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #005f99;
+  transform: scale(1.05);
+}
+#stars, #prize {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #222;
+}
+#roulette-container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 3px solid #0088cc;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+#roulette-strip {
+  display: flex;
+  transition: transform 2s ease-out;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-right: 2px solid #ddd;
+}
+#indicator {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid red;
+  z-index: 10;
+}
